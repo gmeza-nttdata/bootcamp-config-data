@@ -21,3 +21,7 @@ spring:
           uri: http://localhost:8082/accounts/
           predicates:
             - Path=/accounts/**
+        - id: credits-service
+          uri: http://localhost:8083/credits/
+          predicates:
+            - Path=/credits/**
