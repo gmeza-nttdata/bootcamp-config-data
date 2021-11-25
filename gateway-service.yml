@@ -14,10 +14,10 @@ spring:
           enabled: true
       routes:
         - id: users-service
-          uri: http://localhost:8081/
+          uri: http://localhost:8081/users/
           predicates:
-            - Path=/user/**
-        - id: product-service
-          uri: http://localhost:8082/
+            - Path=/users/**
+        - id: products-service
+          uri: http://localhost:8082/accounts/
           predicates:
-            - Path=/account/**
+            - Path=/accounts/**
