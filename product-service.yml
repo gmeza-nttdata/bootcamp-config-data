@@ -13,12 +13,12 @@ eureka:
 
 user:
   web:
-    url: http://localhost:8081
+    url: http://user-service/users
 
 account:
   web:
-    url: http://localhost:8082
+    url: http://account-service/accounts
 
 credit:
   web:
-    url: http://localhost:8083
+    url: http://credit-service/credits
