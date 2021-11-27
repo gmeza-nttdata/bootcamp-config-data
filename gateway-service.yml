@@ -29,3 +29,7 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/products/**
+        - id: operation-service
+          uri: lb://OPERATION-SERVICE
+          predicates:
+            - Path=/operations/**
