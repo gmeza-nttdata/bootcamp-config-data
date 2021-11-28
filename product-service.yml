@@ -51,3 +51,11 @@ resilience4j:
     instances:
       getUserService:
         base-config: shared
+      getAllAccountService:
+        base-config: shared
+      createAccountService:
+        base-config: shared
+      createCreditService:
+        base-config: shared
+      getAllCreditService:
+        base-config: shared
