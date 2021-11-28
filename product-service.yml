@@ -37,8 +37,8 @@ management:
 
 resilience4j:
   circuitbreaker:
-    instances:
-      getUserService:
+    config:
+      shared:
         registerHealthIndicator: true
         eventConsumerBufferSize: 10
         automaticTransitionFromOpenToHalfOpenEnabled: true
@@ -48,3 +48,6 @@ resilience4j:
         slidingWindowSize: 10
         waitDurationInOpenState: 2s
         slidingWindowType: COUNT_BASED
+    instances:
+      getUserService:
+        base-config: shared
