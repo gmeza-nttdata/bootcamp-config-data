@@ -37,7 +37,7 @@ management:
 
 resilience4j:
   circuitbreaker:
-    config:
+    configs:
       shared:
         registerHealthIndicator: true
         eventConsumerBufferSize: 10
