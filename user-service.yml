@@ -14,7 +14,7 @@ eureka:
 management:
   health:
     circuitbreakers:
-      eanbled: true
+      enabled: true
   endpoints:
     web:
       exposure:
