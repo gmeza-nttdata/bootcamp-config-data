@@ -29,3 +29,19 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/products/**
+        - id: account-transaction-service
+          uri: lb://ACCOUNT-TRANSACTION-SERVICE
+          predicates:
+            - Path=/account-transactions/**
+        - id: credit-transaction-service
+          uri: lb://CREDIT-TRANSACTION-SERVICE
+          predicates:
+            - Path=/credit-transactions/**
+        - id: account-transfer-service
+          uri: lb://ACCOUNT-TRANSFER-SERVICE
+          predicates:
+            - Path=/account-transfers/**
+        - id: report-service
+          uri: lb://REPORT-SERVICE
+          predicates:
+            - Path=/reports/**
