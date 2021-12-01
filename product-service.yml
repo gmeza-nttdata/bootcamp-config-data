@@ -11,14 +11,8 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka-dev:8761/eureka/
 
-user:
+bootcamp:
   web:
-    url: http://user-service/users
-
-account:
-  web:
-    url: http://account-service/accounts
-
-credit:
-  web:
-    url: http://credit-service/credits
+    user: http://user-service/users
+    account: http://account-service/accounts
+    credit: http://credit-service/credits
