@@ -5,3 +5,9 @@ eureka:
 client:
   serviceUrl:
     defaultZone: http://localhost:8761/eureka/
+
+bootcamp:
+  web:
+    user: http://user-service/users
+    account: http://account-service/accounts
+    credit: http://credit-service/credits
