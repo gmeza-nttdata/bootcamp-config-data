@@ -15,3 +15,4 @@ bootcamp:
   web:
     user: http://user-service/users
     account: http://account-service/accounts
+    debit-card: http://debit-card-service/debit-cards
