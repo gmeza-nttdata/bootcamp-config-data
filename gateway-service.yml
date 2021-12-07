@@ -45,3 +45,11 @@ spring:
           uri: lb://REPORT-SERVICE
           predicates:
             - Path=/reports/**
+        - id: debit-card-service
+          uri: lb://DEBIT-CARD-SERVICE
+          predicates:
+            - Path=/debit-cards/**
+        - id: debit-card-statement-service
+          uri: lb://DEBIT-CARD-STATEMENT-SERVICE
+          predicates:
+            - Path=/debit-card-statements/**
