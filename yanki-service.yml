@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@mongo-dev:27017/bootcamp
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-dev:8761/eureka/

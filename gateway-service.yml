@@ -53,3 +53,12 @@ spring:
           uri: lb://DEBIT-CARD-STATEMENT-SERVICE
           predicates:
             - Path=/debit-card-statements/**
+        - id: yanki-service
+          uri: lb://YANKI-SERVICE
+          predicates:
+            - Path=/yanki/**
+        - id: yanki-transaction-service
+          uri: lb://YANKI-TRANSACTION-SERVICE
+          predicates:
+            - Path=/yanki-transactions/**
+        
