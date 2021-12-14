@@ -10,3 +10,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-dev:8761/eureka/
+
+kafka:
+  bootstrapAddress: host.docker.internal:9092
+  groupId: group_id

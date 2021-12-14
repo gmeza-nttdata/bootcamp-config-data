@@ -6,6 +6,19 @@ spring:
     mongodb:
       uri: mongodb://root:root@mongo-dev:27017/bootcamp
       authentication-database: admin
+  redis:
+    host: redis-dev
+    port: 6379
+  cache:
+    redis:
+      time-to-live: 60000
+    cache-names: users
+
+kafka:
+  bootstrapAddress: host.docker.internal:9092
+  groupId: group_id
+
+
 
 eureka:
   client:
