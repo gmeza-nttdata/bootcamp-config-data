@@ -12,7 +12,6 @@ spring:
   cache:
     redis:
       time-to-live: 5000
-    cache-names: users
 
 kafka:
   bootstrapAddress: host.docker.internal:9092
