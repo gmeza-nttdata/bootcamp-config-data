@@ -5,6 +5,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:root@mongo-dev:27017/bootcamp
+      authentication-database: admin
 
 eureka:
   client:
