@@ -1,16 +1,17 @@
 server:
-  port: 8082
+  port: 8080
 
 spring:
   data:
     mongodb:
-      uri: mongodb://root:root@localhost:27017/bootcamp
+      uri: mongodb://root:root@mongo-dev:27017/bootcamp
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-dev:8761/eureka/
 
 kafka:
   bootstrapAddress: host.docker.internal:9092
   groupId: group_id
+  
