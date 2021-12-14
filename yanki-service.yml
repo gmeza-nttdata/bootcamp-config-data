@@ -11,7 +11,7 @@ spring:
     port: 6379
   cache:
     redis:
-      time-to-live: 60000
+      time-to-live: 5000
     cache-names: users
 
 kafka:
